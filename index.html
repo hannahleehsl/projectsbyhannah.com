@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+    -scale = 1.0"
+    />
+    <title>A Guide to Seventeen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/86bafdf561.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="header">
+      <div class = "group">
+        <nav>
+          <a href="index.html"
+            ><img src="images/logowhite.png" alt="svt logo"
+          /></a>
+          <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html"> HOME</a></li>
+              <li><a href="history.html"> HISTORY</a></li>
+              <li><a href="members.html"> MEMBERS</a></li>
+              <li><a href="units.html"> UNITS</a></li>
+              <li><a href="morepics.html"> MORE PICS</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="text-box">
+          <h1>A Beginner's Guide to Seventeen</h1>
+          <p>
+            So underrated it's criminal.
+          </p>
+          <a href="history.html" class="hero-btn">Start Your Journey Now!</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <h4>About the Project</h4>
+      <p>Made with html, CSS, JS and love &#x1F90D mwah &#x1F90D<br> <br>Best on Desktop</p>
+      <h5>Hannah Lee</h5>
+    </section>
+
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-600px";
+      }
+    </script>
+  </body>
+</html>
