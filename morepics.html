@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+    -scale = 1.0"
+    />
+    <title>Photo Gallery</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/86bafdf561.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="picsub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logowhite.png" alt="svt logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+            <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+            <ul>
+              <li><a href="index.html"> HOME</a></li>
+              <li><a href="history.html"> HISTORY</a></li>
+              <li><a href="members.html"> MEMBERS</a></li>
+              <li><a href="units.html"> UNITS</a></li>
+              <li><a href="morepics.html"> MORE PICS</a></li>
+            </ul>
+          </div>
+          <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="text-box4">
+        <h1>In Case You Needed More</h1>
+      </div>
+    </section>
+    <div class="full-img" id="fullImgBox">
+      <img src="images/pgal1.jpeg" id="fullImg" />
+      <span onclick="closeFullImg()">X</span>
+    </div>
+    <div class="photo-gal">
+      <img src="images/pgal1.jpeg" onclick="openFullImg(this.src)" />
+      <img src="images/pgal2.jpeg" onclick="openFullImg(this.src)" />
+      <img
+        src="https://i.pinimg.com/474x/e1/09/d5/e109d522bfee06efaecd7aa7a5d0e247.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/564x/0d/8f/87/0d8f8798348d9cfc8f6840b08a35685b.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/8e/c2/2d/8ec22db658d7ac6ea29d17a49ce83cb0.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/d1/0b/f0/d10bf07cfa9f2083d9291ed26f6660ed.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/564x/1e/09/fa/1e09fa25d548a4f0550e5c36d1ac8619.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/0e/f5/5d/0ef55d234f26954a752dabf320400d5f.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/82/a8/9f/82a89f0076b012ef915baa59ee243b99.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/5f/9a/37/5f9a37e2b9b9c2344eaf42d80fea1dba.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/564x/4c/c7/37/4cc737c8184cdbdc03dd750f86a86cc6.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/cb/8a/91/cb8a9174c2d332594f675c1c6f9e3e21.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/34/67/f7/3467f79d71bb6ebaa9fe868e1bb42a99.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/8c/c7/d3/8cc7d330e7a93fa5a01b34ba02cc0b46.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/d8/a5/7f/d8a57f0521d5d87e3d16aa1861bec8d7.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/564x/de/96/7b/de967bafad9409b3db0e9a8e9a6605c9.jpg"
+        onclick="openFullImg(this.src)"
+      />
+
+      <img
+        src="https://i.pinimg.com/474x/a7/30/dd/a730dd78198d016e22daa25f2a2923fc.jpg"
+        onclick="openFullImg(this.src)"
+      />
+      <img
+        src="https://i.pinimg.com/474x/ab/4d/bc/ab4dbcc9f492a14b875f70ed88098e57.jpg"
+        onclick="openFullImg(this.src)"
+      />
+    </div>
+  </body>
+  <section class="footer">
+    <h4>About the Project</h4>
+    <p>Made with html, CSS, JS and love &#x1F90D mwah &#x1F90D<br> <br>Best on Desktop</p>
+    <h5>Hannah Lee</h5>
+  </section>
+  <script>
+    var navLinks = document.getElementById("navLinks");
+    function showMenu() {
+      navLinks.style.right = "0";
+    }
+    function hideMenu() {
+      navLinks.style.right = "-200px";
+    }
+  </script>
+  <script>
+    var fullImgBox = document.getElementById("fullImgBox");
+    var fullImg = document.getElementById("fullImg");
+
+    function openFullImg(pic) {
+      fullImgBox.style.display = "flex";
+      fullImg.src = pic;
+    }
+
+    function closeFullImg() {
+      fullImgBox.style.display = "none";
+    }
+  </script>
+</html>
