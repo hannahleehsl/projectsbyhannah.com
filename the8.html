@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+    -scale = 1.0"
+    />
+    <title>A Guide to Seventeen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/86bafdf561.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="t8sub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logowhite.png" alt="svt logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="history.html"> HISTORY</a></li>
+            <li><a href="members.html"> MEMBERS</a></li>
+            <li><a href="units.html"> UNITS</a></li>
+            <li><a href="morepics.html"> MORE PICS</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="member-name">
+        <h1>THE8</h1>
+      </div>
+    </section>
+
+    <!-----facts------->
+    <section class="basic-facts">
+      <h1>Basic Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/t83.jpeg" />
+          <img src="images/t81.jpeg" />
+          <img src="images/t82.jpeg" />
+        </div>
+      </div>
+      <h2>Name</h2>
+      <p>Xu Minghao</p>
+      <h2>Respective Emoji</h2>
+      <p>&#x1F438 because he likes Kermit</p>
+      <h2>Positions</h2>
+      <p>Lead Dancer, Sub Vocalist, Sub Rapper</p>
+      <h2>Nationality</h2>
+      <p>Chinese</p>
+      <h2>MBTI</h2>
+      <p>INFJ</p>
+    </section>
+
+    <!---------fun facts---------->
+    <section class="basic-facts">
+      <h1>Fun Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/t8funny1.jpeg" />
+          <img src="images/t8funny2.jpeg" />
+          <img src="images/t8funny3.jpeg" />
+        </div>
+      </div>
+      <p>Material gurl</p>
+      <p>Sass level is off the charts</p>
+      <p>No.1 hater of Hoshi's tiger agenda</p>
+      <p>Doesn't laugh, only giggles</p>
+      <p>Has a better fashion sense than me</p>
+    </section>
+
+    <!-----------space-->
+    <section class="space">
+      <p></p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
