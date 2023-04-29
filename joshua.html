@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+    -scale = 1.0"
+    />
+    <title>A Guide to Seventeen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/86bafdf561.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="jssub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logowhite.png" alt="svt logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="history.html"> HISTORY</a></li>
+            <li><a href="members.html"> MEMBERS</a></li>
+            <li><a href="units.html"> UNITS</a></li>
+            <li><a href="morepics.html"> MORE PICS</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="member-name">
+        <h1>JOSHUA</h1>
+      </div>
+    </section>
+
+    <!-----facts------->
+    <section class="basic-facts">
+      <h1>Basic Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/js2.jpeg" />
+          <img src="images/js1.jpeg" />
+          <img src="images/js3.jpeg" />
+        </div>
+      </div>
+      <h2>Name</h2>
+      <p>Joshua Jisoo Hong</p>
+      <h2>Respective Emoji</h2>
+      <p>&#x1F98C just look at his doe eyes!!</p>
+      <h2>Positions</h2>
+      <p>Lead Vocalist, Visual</p>
+      <h2>Nationality</h2>
+      <p>American</p>
+      <h2>MBTI</h2>
+      <p>ENFJ</p>
+    </section>
+
+    <!---------fun facts---------->
+    <section class="basic-facts">
+      <h1>Fun Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/jsfun1.jpeg" />
+          <img src="images/jsfun2.jpeg" />
+          <img src="images/jsfun3.jpeg" />
+        </div>
+      </div>
+      <p>Originally from LA</p>
+      <p>Quiet extrovert with major crackhead energy</p>
+      <p>Spends way too much time with Jeonghan cuz now he always cheats</p>
+      <p>Seems normal at first but don't be fooled</p>
+      <p>Obsessed with the song "Sunday Morning" by Maroon 5</p>
+      <p>Super competitive #2</p>
+    </section>
+
+    <!-----------space-->
+    <section class="space">
+      <p></p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
