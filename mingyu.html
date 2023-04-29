@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial
+    -scale = 1.0"
+    />
+    <title>A Guide to Seventeen</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="http://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://kit.fontawesome.com/86bafdf561.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <section class="mgsub-header">
+      <nav>
+        <a href="index.html"
+          ><img src="images/logowhite.png" alt="svt logo"
+        /></a>
+        <div class="nav-links" id="navLinks">
+          <i class="fa-solid fa-xmark" onclick="hideMenu()"></i>
+          <ul>
+            <li><a href="index.html"> HOME</a></li>
+            <li><a href="history.html"> HISTORY</a></li>
+            <li><a href="members.html"> MEMBERS</a></li>
+            <li><a href="units.html"> UNITS</a></li>
+            <li><a href="morepics.html"> MORE PICS</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+      </nav>
+      <div class="member-name">
+        <h1>MINGYU</h1>
+      </div>
+    </section>
+
+    <!-----facts------->
+    <section class="basic-facts">
+      <h1>Basic Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/mg2.jpeg" />
+          <img src="images/mg1.jpeg" />
+          <img src="images/mg3.jpeg" />
+        </div>
+      </div>
+      <h2>Name</h2>
+      <p>Kim Mingyu</p>
+      <h2>Respective Emoji</h2>
+      <p>&#x1F436 because he radiates puppy energy</p>
+      <h2>Positions</h2>
+      <p>Lead Rapper, Sub Vocalist, Visual</p>
+      <h2>Nationality</h2>
+      <p>South-Korean</p>
+      <h2>MBTI</h2>
+      <p>ENFJ</p>
+    </section>
+
+    <!---------fun facts---------->
+    <section class="basic-facts">
+      <h1>Fun Facts</h1>
+      <div class="diffunits">
+        <div class="threecol">
+          <img src="images/mgfun1.jpeg" />
+          <img src="images/mgfun2.jpeg" />
+          <img src="images/mgfun3.jpeg" />
+        </div>
+      </div>
+      <p>6' 2" man-whore always flexing his biceps</p>
+      <p>Constantly humbled by his members</p>
+      <p>Talks fast with a lisp when excited</p>
+      <p>The golden retriever to Wonwoo's black cat</p>
+      <p>Scared of everything</p>
+    </section>
+
+    <!-----------space-->
+    <section class="space">
+      <p></p>
+    </section>
+    <script>
+      var navLinks = document.getElementById("navLinks");
+      function showMenu() {
+        navLinks.style.right = "0";
+      }
+      function hideMenu() {
+        navLinks.style.right = "-200px";
+      }
+    </script>
+  </body>
+</html>
